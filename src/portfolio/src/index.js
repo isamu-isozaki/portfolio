@@ -2,10 +2,6 @@
  * Author: Isamu Isozaki
  * Root of react app
  * TODO:
- * 1. Setup Stacks for Experience and Projects and highlight some you are proud of-> 
- * fix styling
- * 2. Replace contacts with logo of linkedIn, facebook, etc
- * 3. Add link to Resume
  * 4. Build
  * 5. Start on Ionos server using p2
  * 6. Link to nginx

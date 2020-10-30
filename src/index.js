@@ -13,7 +13,6 @@ const { APP_PORT } = require("@/config");
  * Start node server
  */
 async function startApp() {
-  await require("@/database").connect();
   startExpressApp();
 }
 /**
