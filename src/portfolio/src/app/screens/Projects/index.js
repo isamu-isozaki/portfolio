@@ -2,11 +2,12 @@ import React from 'react';
 import { Flex, Heading, Text, Stack, Box, Link, Button, SimpleGrid } from "@chakra-ui/core";
 import { Player } from 'video-react';
 
-function Project({title, vidLink ,link, desc, ...props}) {
+function Project({title, vidLink ,link, mediumLink, desc, ...props}) {
     return (
         <Box p={5} shadow="md" borderWidth="1px" flex="1" rounded="md" {...props}>
             <Heading fontSize="xl">{title}</Heading>
             {link && (<Button as={Link} href={link}>Link to project</Button>)}
+            {mediumLink && (<Button as={Link} href={mediumLink}>Link to Medium</Button>)}
             {vidLink && (<Button as={Link} href={vidLink}>Link to video</Button>)}
             <Text mt={4}>{desc}</Text>
         </Box>
@@ -22,6 +23,12 @@ export default function Projects() {
             learn basic military strategy.`
         },
         {
+            title: "Understanding GPT-2's source code",
+            mediumLink: "https://medium.com/analytics-vidhya/understanding-the-gpt-2-source-code-part-1-4481328ee10b",
+            desc: `Wrote a series in medium on how the GPT-2 of Open AI works, or at least how I understand it works, line by line. 
+            Currently the whole series has 9800 views.`
+        },
+        {
             title: "Chesskateers",
             link: "https://chesskateers-app.herokuapp.com/",
             desc: `I worked with my team Drexel's CI course to make an multiplayer chess game with a card game.
@@ -30,6 +37,7 @@ export default function Projects() {
         {
             title: "baseline-selfplay",
             link: "https://github.com/isamu-isozaki/baseline-selfplay",
+            mediumLink: "https://medium.com/analytics-vidhya/making-a-self-play-environment-for-openai-gym-23486bc44d6f",
             desc: `I modified OpenAI's baselines so they can work with environments with multiple agents. 
             Still a work in progress but does work with my environment.`
         },

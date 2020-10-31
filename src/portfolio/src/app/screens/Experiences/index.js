@@ -31,6 +31,16 @@ export default function Experiences() {
             ],
         },
         {
+            title: "Wolf Financial",
+            position: "Frontend Developer",
+            link: "https://wolf.financial/",
+            time: "Mar 2020 - Jun 2020",
+            descs: [
+                "Setup Dashboard and integrated with backend using React Native so that users can get a basic overview of what Wolf is about",
+                "Setup Login screen with custom animations using React Native",
+            ],
+        },
+        {
             title: "Team AI",
             position: "AI Intern",
             link: "https://www.team-ai.com/",
