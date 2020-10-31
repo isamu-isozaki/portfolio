@@ -16,7 +16,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider, ColorModeProvider, theme } from "@chakra-ui/core";
-import '../node_modules/video-react/dist/video-react.css';
 import './index.css';
 require('dotenv').config();
 
