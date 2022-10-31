@@ -118,7 +118,7 @@ export default function Projects() {
             ]
         },
         {
-            title: "Emotional Detecction Using AAMs",
+            title: "Emotional Detection Using AAMs",
             githubLink: "https://github.com/isamu-isozaki/Mastering-OpenCV-with-Practical-Computer-Vision-Projects",
             descs: [
                 "Partnered with Gunma University for the JST grant and used a technique called Active Appearance Modeling which uses PCA for detecting expressions in order to detect emotion."
