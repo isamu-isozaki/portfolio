@@ -35,7 +35,7 @@ export default function Projects() {
         {
             title: "Bipedal Walking Robot",
             githubLink: "https://github.com/isamu-isozaki/biped-robot",
-            videoLink: "https://www.youtube.com/watch?v=XUQIfpQwdRo&ab_channel=IsamuIsozaki",
+            vidLink: "https://www.youtube.com/watch?v=XUQIfpQwdRo&ab_channel=IsamuIsozaki",
             mediumLink: "https://isamu-website.medium.com/robot-making-adventures-d44fd5c5ed89",
             descs: [
                 "With a partner created a 12-dof bipedal walking robot by using Autodesk Inventor to create and export the CAD to MATLAB to simulate the walking motion using the inverse pendulum.",
