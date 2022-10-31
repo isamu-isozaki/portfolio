@@ -1,16 +1,9 @@
 // Thanks https://codesandbox.io/s/chakra-ui-header-sbsh5?fontsize=14&hidenavigation=1&theme=dark
 import React, {useState} from "react";
-import { Box, Heading, Flex, Text, Button, Link, useColorMode, Switch, FormLabel } from "@chakra-ui/core";
+import { Box, Heading, Flex, useColorMode, Switch, FormLabel, IconButton, Link } from "@chakra-ui/core";
 import { NavLink } from 'react-router-dom';
+import { AiOutlineLinkedin, AiOutlineMedium, AiOutlineGithub } from "react-icons/ai";
 
-
-const MenuItems = ({ children, to, ...props }) => (
-    <NavLink to={to} activeStyle={{fontWeight: 'bold'}} {...props}>
-        <Text mt={{ base: 4, md: 0 }} mr={6} display="block" fontSize={'1.1em'}>
-            {children}
-        </Text>
-    </NavLink>
-);  
 
 // Note: This code could be better, so I'd recommend you to understand how I solved and you could write yours better :)
 const NavBarHeader = props => {
@@ -50,12 +43,13 @@ const NavBarHeader = props => {
       <Box
         display={{ sm: show ? "block" : "none", md: "flex" }}
         width={{ sm: "full", md: "auto" }}
-        alignItems="right"
+        alignItems="center"
       >
-        <MenuItems exact to={'/'}>Home</MenuItems>
-        <MenuItems to={'/experiences'}>Experiences</MenuItems>
-        <MenuItems to={'/projects'}>Projects</MenuItems>
-        
+        <IconButton variant='ghost' marginRight='8px' as={Link} href={'https://www.linkedin.com/in/isamu-isozaki-7698191b0/'} size='lg' icon={AiOutlineLinkedin}/>
+        <IconButton variant='ghost' marginRight='8px' as={Link} href={'https://github.com/isamu-isozaki'} size='lg' icon={AiOutlineGithub}/>
+        <IconButton variant='ghost' marginRight='8px' as={Link} href={'https://isamu-website.medium.com/'} size='lg' icon={AiOutlineMedium}/>
+
+
         <FormLabel htmlFor="theme">Change theme?</FormLabel>
         <form onChange={toggleColorMode}>
           <Switch size="lg"/>

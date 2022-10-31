@@ -14,17 +14,9 @@ function PortfolioStack() {
     <BrowserRouter>
         <div className="App">
           <NavBar />
-          <Switch>
-            <Route exact path='/'>
-              <Home/>
-            </Route>
-            <Route path='/experiences'>
-              <Experiences />
-            </Route>
-            <Route path='/projects'>
-              <Projects />
-            </Route>
-          </Switch>
+          <Home/>
+          {/* <Experiences /> */}
+          <Projects />
         </div>
       </BrowserRouter>
   );
