@@ -52,7 +52,8 @@ export default function Projects() {
                 "Made a recipt scanner for itemizing receipt items using pytesseract, OpenCV and paddleocr.",
                 "Created a price splitter web app using Node Js, Mongoose on the backend and Redux with React Js for the frontend.",
                 "Used firebase for account creation and securely transmitting transactions",
-                "Deployed to Ubuntu Server with DNS records from IONOS, port mapping with nginx and pm2 to handle runs."
+                "Deployed to Ubuntu Server with DNS records from IONOS, port mapping with nginx and pm2 to handle runs.",
+                "Used pnpm to save 50% of harddisk space by reusing duplicate packages across projects."
             ]
         },
         {
@@ -60,7 +61,8 @@ export default function Projects() {
             githubLink: 'https://github.com/isamu-isozaki/portfolio',
             websiteLink: 'https://isamuisozaki.com/',
             descs: [
-                "Deployed to Ubuntu Server with DNS records from IONOS, port mapping with nginx and pm2 to handle runs."
+                "Deployed to Ubuntu Server with DNS records from IONOS, port mapping with nginx and pm2 to handle runs.",
+                "Used pnpm to save 50% of harddisk space by reusing duplicate packages across projects."
             ]
         },
         {   
